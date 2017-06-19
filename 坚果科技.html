@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-3.1.1.min.js"></script>    
+		<link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+		<link href="css/webOPPO.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="../../js/scrolloverflow.min.js"></script>
+		<script src="js/jquery.fullPage.js"></script>
+		
+		<script>
+			$(function(){
+		    $('#fullpage').fullpage({
+		        verticalCentered: false,	//是否垂直居中
+		       	scrollingSpeed:1000,  //滚动速度
+		       	loopHorizontal:true,  //幻灯片循环滚动
+		        sectionsColor: ['white','#EDEDED', '#EDEDED', '#E5E5E5','white',],		//每个section的背景，必须和section的数量一致
+		        anchors: ['page0', 'page1', 'page2', 'page3','page4'],		//anchors:锚链接    定位选择第几页  page数字
+		        navigation: true,
+		        navigationPosition:"right",
+		        navigationTooltips: ['T锤子手机', '锤子科技', '设计', '功能','操作系统'],
+		    	
+			'afterLoad':function(anchorLink,index){
+				if(index==2){			//第二页
+					$(".tu1").animate({
+							"left":"300px"
+							
+						},500)
+					
+					$(".tu2").animate({
+							"left":"800px"
+							
+						},500)
+					
+					
+				}
+				if(index==3){			//第三页
+					$(".big img").animate({
+							width:"1600px",
+							height:"600px"	
+							
+						},500)
+					
+					
+					
+				}
+				if(index==4){		//第四页
+					$(".topout img").animate({
+							"margin-top":"-400px"
+							
+						},500)
+				
+				
+				}
+				if(index==5){		//第五页
+					$(".pic1").animate({
+						"left":"350px"
+					},500)	
+					$(".pic2").animate({
+						"left":"234px"
+					},500)	
+					$(".pic3").animate({
+						"left":"100px"
+					},500)	
+					$(".pic4").animate({
+						"left":"0px"
+					},500)	
+					$(".pic5").animate({
+						"left":"-116px"
+					},500)	
+					$(".pic6").animate({
+						"left":"-237px"
+					},500)	
+					
+				}
+				
+				
+				
+				
+				},
+				'onLeave':function(index,direction){
+					if(index ==2){
+						$(".tu1").animate({
+							"left":"-300px"
+							
+						},"slow")
+					
+						$(".tu2").animate({
+							"left":"-800px"
+							
+						},"slow")
+					}	
+						
+					if(index==3){			//第三页
+					$(".big img").animate({
+							width:"1800px",
+							height:"800px"	
+							
+						},"slow")
+					}
+					
+					if(index==4){		//第四页
+					$(".topout img").animate({
+//							"margin-top":"-400px"
+							"margin-top":"200px" 
+						},"slow")
+					}
+				
+					if(index==5){		//第五页
+					$(".pic1").animate({
+						"left":"28px"
+					},500)	
+					$(".pic2").animate({
+						"left":"44px"
+					},500)	
+					$(".pic3").animate({
+						"left":"54px"
+					},500)	
+					$(".pic4").animate({
+						"left":"60px"
+					},500)	
+					$(".pic5").animate({
+						"left":"60px"
+					},500)	
+					$(".pic6").animate({
+						"left":"60px"
+					},500)	
+					
+				}
+			}			
+	  	})
+	})						
+					
+					
+					
+					
+				
+				
+				
+				
+				
+				
+				
+				
+			
+					
+				
+				
+//				$(function(){
+//					$("#page2").hover(function(){
+//						$(".tu1").animate({
+//							"left":"300px"
+//							
+//						},500)
+//					})
+//				})
+				
+//				$(function(){
+//					$("#page2").hover(function(){
+//						$(".tu2").animate({
+//							"left":"800px"
+//							
+//						},500)
+//					})
+//				})
+//				
+				
+				
+				//第三页
+//				$(function(){
+//					$("#page3").hover(function(){
+//						$(".big img").animate({
+//							width:"1600px",
+//							height:"600px"	
+//							
+//						},500)
+//					})
+//				})
+//				
+				
+				
+				
+				//第四页
+//				$(function(){
+//					$("#page4").hover(function(){
+//						$(".topout img").animate({
+//							"margin-top":"-400px"
+//							
+//						},500)
+//					})
+//				})
+//				
+
+				
+				//第五页
+//					
+//			$(function(){
+//					$("#page5").hover(function(){
+//						$("#page5 ul li img").animate({
+////						margin-left: "-12px",
+////	  					margin-right:"-12px"
+//	  					"margin-left": "-138px",
+////	  					"margin-right": "-500px",
+////	  					"margin-right":"auto"
+//						},1000)
+//					})
+//				})
+				
+				
+		
+				
+			
+			
+		
+		</script>
+	</head>
+		
+	<body>
+		
+		
+			<div id="header" class=".header">
+					<div class="hd_con">
+						<a href="#" class="logo"></a>
+						<ul id="menu">
+			               
+			                <li><a href="#page0">T锤子手机</a></li>
+			                <li><a href="#page1">锤子科技</a></li>
+			                <li><a href="#page2">设计</a></li>
+			                <li><a href="#page3">功能</a></li>
+			                <li><a href="#page4">操作系统</a></li>
+        				 </ul>        
+   					</div>
+			</div>
+		<div id="fullpage">
+    		<div class="section" id="page1">
+    			
+		    	<div class="slide">
+		    		<img src="images/banner201.jpg">
+		    	</div>
+		        <div class="slide">
+		        	<img src="images/banner202.jpg">
+		        </div>
+		        <div class="slide">
+		        	<img src="images/banner203.jpg">
+		        </div>
+		        <div class="slide">
+		        	<img src="images/banner204.jpg">
+		        </div>
+    			<div class="headerout">
+    				<ul>
+    					<!--<li><img src="images/2017-03-31_113057.png"></li>
+    					<li><img src="images/2017-03-31_113112.png"></li>	
+    					<li><img src="images/2017-03-31_113142.png"></li>-->
+    					<li><img src="images/out204.png"></li>
+    					<li><img src="images/out201.png"></li>
+    					<li><img src="images/out202.png"></li>
+    					
+    				</ul>
+    				
+    			</div>
+    
+   	 		</div>
+   	 		
+   	 		
+   	 		<!--//第二页-->
+    		<div class="section" id="page2">
+    			<div class="title-h3">
+	    			<h3 class="ng-binding" ng-bind-html="'overview.fulfil.title' | translate">锤子科技的一小步，智能手机进化的一大步</h3>
+	    			<h5><a href="">进一步了解“一小步”></a></h5>
+    			</div>
+	    		<div class="tu1">
+	    			<img src="images/pretty-mirror-left_0cc13ed337.png">
+	    		</div>	
+	    		<div class="tu2">
+	    			<img src="images/pretty-mirror-right_84dd857a9b.png">
+	    		</div>
+    		</div>
+    	
+    	
+    	
+    	
+    		<!--//第三页-->
+   			<div class="section" id="page3">
+   				<!--<div class="wenzi">
+   					<img src="images/wenzi.png">
+   				</div>-->
+	   			<div class="big">
+	   				<img src="images/jingyu.png">
+	   			</div>
+   		
+   			</div>
+        
+    		<!--//第四页-->
+    	<div class="section" id="page4">
+    			<div class="toplist">
+    				<img src="images/wenzi.png" style="width: 100%;height:240px;">
+    			</div>
+ 			<div class="topout" style="background: #E4E4E4;">
+    			<img src="images/tu1.png" style="margin-top: 200px;">
+    		</div>
+    	</div>
+    	
+    	
+    	<!--	//第五页-->
+    	<div class="section" id="page5">
+    		<div class="content">
+    			<h3>
+			<span class="ng-binding" ng-bind-html="'overview.taste.title' | translate" style="font-size: 25px;">Smartisan OS 3.x，手机上的信息输入、处理及分享的一站式方案</span>
+				</h3>
+				<h5>
+					<!--<a href="#/os">-->	
+					<span class="ng-binding" ng-bind-html="'overview.taste.more' | translate" style="text-align: center;line-height: 5px;margin: 690px;">进一步了解 Smartisan OS</span>
+					<span class="smartisan-icon gt"></span>
+					<!--</a>-->
+				</h5>
+    		</div>
+    		<div class="last">
+	    		
+				<!--	<li class="screen-phone1" style="position: absolute;top:50px">-->
+						<img  class="pic1" src="images/os-phone_01.png">
+						<img  class="pic2" src="images/os-phone_02.png">
+						<img  class="pic3" src="images/os-phone_03.png">
+						<img  class="pic4" src="images/os-phone_04.png">
+						<img  class="pic5" src="images/os-phone_05.png">
+						<img  class="pic6" src="images/os-phone_06.png">
+			</div>
+			
+    	</div>	
+    		
+    		
+    		
+    	
+ 
+    	
+    
+	</div>
+
+	</body>
+</html>
